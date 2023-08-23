@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="site_bb_style.css">
+    <title>Λεοντάρι</title>
+</head>
+<body>
+
+    <div class="h-1">
+        <header>
+            <div class="img-1">
+                <a href="index.html"><img src="ΛΟΓΚΟΙΣΤΟΘΕΣΗΣ.jpg" width="150px"></a>
+            </div>
+    
+            <div class="list-1">
+                <ul>
+                    <li><a href="istoria.html">ΙΣΤΟΡΙΑ</a></li>
+                    <li><a href="toposima.html">ΤΟΠΟΣΗΜΑ</a></li>
+                    <li><a href="efimerides.html">ΕΦ. "ΤΟ ΠΟΛΥΑΝΔΡΙΟΝ"</a></li>
+                    <li><a href="fotografies.html">ΦΩΤΟΓΡΑΦΙΕΣ</a></li>
+                    <li><a href="events.html">ΕΚΔΗΛΩΣΕΙΣ</a></li>
+                    <li><a href="ASL.html">Α.Σ.Λ.</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="con">
+
+        <div class="image-container">
+            <div class="image"><img src="ΤΟΠΟΣΗΜΑ/4=ΜΠΑΡΜΠΑΚΑΣ/1900=ΜΠΑΡΜΠΑΚΑΣ=ΕΠΙΧΡΩΜΑΤΙΣΜΕΝΗ(1).jpg"></div>
+            <div class="image"><img src="ΤΟΠΟΣΗΜΑ/4=ΜΠΑΡΜΠΑΚΑΣ/1900=μπαρμπακασ=βρεττ=1).jpg"></div>
+            <div class="image"><img src="ΤΟΠΟΣΗΜΑ/4=ΜΠΑΡΜΠΑΚΑΣ/46476_3817049316688_583812940_n.jpg"></div>
+            <div class="image"><img src="ΤΟΠΟΣΗΜΑ/4=ΜΠΑΡΜΠΑΚΑΣ/ΜΠΑΡΜΠΑΚΑΣ 1900.jpg"></div>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="../ΤΟΠΟΣΗΜΑ/4=ΜΠΑΡΜΠΑΚΑΣ/1900=ΜΠΑΡΜΠΑΚΑΣ=ΕΠΙΧΡΩΜΑΤΙΣΜΕΝΗ(1).jpg">
+        </div>
+
+    </div>
+
+
+    <script>
+
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = "block";
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+
+    </script>
+
+    <div class="navbar">
+        <div class="n-1">
+            <p class="i">E-mail: <br> kaskaveli1@yahoo.gr <br> topoliandrion@gmail.com</p>
+            <p class="c">Τηλέφωνο: 6974191736</p>
+            <p class="j">Social Media: <a href="https://www.facebook.com/groups/43021624779" target="_blank" class="fa fa-facebook"></a></p>
+        </div> 
+        
+        <footer>
+            <p>Copyright &copy; 2022 mysite</p>
+        </footer>
+        
+        <button type="button" onclick="myFunction()" ondblclick="myFunction2()">&#128071;</button>
+        <a class="g" id="gg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="opacity:0;">&#129409;</a>
+        <script>
+        function myFunction() {
+        document.getElementById("gg").style.opacity = 1;
+        }
+        function myFunction2() {
+        document.getElementById("gg").style.opacity = 0;
+        }
+        </script>
+
+    </div>
+    
+</body>
+</html>

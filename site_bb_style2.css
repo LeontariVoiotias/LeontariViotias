@@ -1,0 +1,33 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    width: 1520px;
+  }
+  
+  .a1{
+    margin-left: 90px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .a2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .pol{
+    position: relative;
+  }
+  
+  .pol h2{
+    margin-left: 45px;
+  }
+  
+  .pol a{
+    transition: all 0.3s ease 0s;
+  }
+  
+  .pol a:hover{
+    filter: brightness(20%);
+  }
